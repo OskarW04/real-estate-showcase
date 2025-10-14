@@ -6,7 +6,7 @@ This project has no dependencies and requires no build steps.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/crafton-landing-page.git](https://github.com/your-username/crafton-landing-page.git)
+    git clone [https://github.com/OskarW04/real-estate-showcase.git](https://github.com/OskarW04/real-estate-showcase.git)
     cd crafton-landing-page
     ```
 2. **Run with Live Server:**
