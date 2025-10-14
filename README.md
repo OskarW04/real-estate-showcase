@@ -6,7 +6,7 @@ This project has no dependencies and requires no build steps.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/OskarW04/real-estate-showcase.git](https://github.com/OskarW04/real-estate-showcase.git)
+    git clone https://github.com/OskarW04/real-estate-showcase.git
     cd real-estate-showcase
     ```
 2. **Run with Live Server:**
