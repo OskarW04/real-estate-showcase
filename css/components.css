@@ -1,0 +1,229 @@
+/* Primary Button */
+
+.primary-btn-default {
+    font-size: 15px;
+    padding: 18px 32px;
+    opacity: 1;
+    border-radius: 999px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    transition: background-color 0.2s ease;
+    border: none;
+}
+
+.primary-btn-default:hover {
+    background: var(--color-primary-hovered);
+    color: var(--color-surface-subtle);
+}
+
+.primary-btn-default:active {
+    background: var(--color-primary-clicked);
+    color: var(--color-surface-subtle);
+}
+
+/* Secondary Button */
+
+.secondary-btn-default {
+    font-size: 15px;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 999px;
+    border-width: 1px;
+    padding-top: 18px;
+    padding-right: 32px;
+    padding-bottom: 18px;
+    padding-left: 32px;
+    background: var(--color-surface-light);
+    transition: background-color 0.2s ease;
+    transition: color 0.1s ease;
+    border: 1px solid var(--color-stroke);
+    color: var(--color-dark);
+}
+
+.secondary-btn-default:hover {
+    color: var(--color-text-on-dark);
+}
+
+.secondary-btn-default:active {
+    color: var(--color-surface-medium);
+    border: 1px solid var(--color-surface-medium);
+}
+
+/* Navigation Item */
+
+.nav-item-default {
+    font-size: 15px;
+    gap: 10px;
+    opacity: 1;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    color: var(--color-dark);
+}
+
+.nav-item-default:hover {
+    color: var(--color-text);
+}
+
+.nav-item-default:active {
+    gap: 10px;
+    opacity: 1;
+    color: var(--color-stroke-on-dark);
+}
+
+.nav-item-default.active {
+    gap: 10px;
+    opacity: 1;
+    color: var(--color-primary);
+}
+
+/* Arrow Button */
+.arrow-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--color-dark);
+    color: var(--color-dark);
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+
+.arrow-button:hover {
+    border: 1px solid var(--color-stroke-on-dark);
+    color: var(--color-stroke-on-dark);
+}
+
+.arrow-button:active {
+    border: 1px solid var(--color-text-on-dark);
+    color: var(--color-text-on-dark);
+}
+
+.arrow-button:disabled {
+    border-color: var(--color-text);
+    color: var(--color-text);
+    cursor: not-allowed;
+}
+
+.arrow-left {
+    rotate: 180deg;
+}
+
+/* Icon Button */
+.icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-surface-medium);
+    border: 7px solid var(--color-stroke-subtle);
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+
+.icon-button:hover .icon {
+    background-color: var(--color-surface-light);
+}
+
+.icon-button:active .icon {
+    background-color: var(--color-primary);
+}
+
+.icon-button:active {
+    background-color: var(--color-stroke-subtle);
+    border: 7px solid var(--color-surface-light);
+}
+
+/* Input And Label */
+
+label {
+    display: block;
+    color: var(--color-text);
+    line-height: -2%;
+}
+
+input,
+textarea {
+    height: 50px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: none;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    border-color: var(--color-stroke);
+    background-color: var(--color-white);
+    width: 100%;
+    letter-spacing: -2%;
+}
+
+input:hover,
+textarea:hover {
+    color: var(--color-dark) !important;
+    border-color: var(--color-primary);
+}
+
+input:disabled,
+textarea:disabled {
+    color: var(--color-surface-medium) !important;
+    border-color: var(--color-surface-medium);
+}
+
+input::not(:placeholder-shown)invalid,
+textarea::not(:placeholder-shown)invalid {
+    color: #B3261E;
+    background-color: #B3261E 10%;
+    border-color: #852221;
+}
+
+textarea {
+    padding-top: 10px;
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+/* Radio button*/
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border-color: var(--color-surface-medium);
+    border-style: solid;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* animacja */
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border-color: var(--color-surface-medium);
+    border-style: solid;
+    transform: translate(-50%, -50%);
+
+}
+
+input[type="checkbox"]:checked+.checkmark::after {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+input[type="checkbox"]:checked+.checkmark {
+    border-color: var(--color-primary);
+}

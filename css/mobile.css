@@ -1,0 +1,244 @@
+@media (max-width: 768px) {
+
+    /* Global Styles */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    span {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Typography */
+    :root {
+        --fs-h1-hero: 48px;
+        --lh-h1-hero: 1.2;
+        --fs-h2-hero: 40px;
+        --lh-h2-hero: 1.3;
+        --fs-h1: 34px;
+        --lh-h1: 1.3;
+        --fs-h2: 28px;
+        --lh-h2: 1.3;
+        --fs-h3: 22px;
+        --lh-h3: 1.4;
+        --fs-body-xl: 17px;
+        --lh-body-xl: 1.6;
+    }
+
+    /* Navigation */
+    .nav-grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 50px;
+        position: relative;
+    }
+
+    .column-right {
+        display: none;
+    }
+
+    .column-center {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .hamburger-label {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 24px;
+        cursor: pointer;
+        z-index: 1001;
+        margin-left: auto;
+    }
+
+    .hamburger-label div {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #333;
+        border-radius: 4px;
+        transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+            top 0.2s ease-in-out;
+    }
+
+    .hamburger-label div:nth-child(1) {
+        top: 0;
+    }
+
+    .hamburger-label div:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .hamburger-label div:nth-child(3) {
+        top: 100%;
+        transform: translateY(-100%);
+    }
+
+    #hamburger:checked~.hamburger-label div:nth-child(1) {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    #hamburger:checked~.hamburger-label div:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburger:checked~.hamburger-label div:nth-child(3) {
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 0;
+        margin: 0;
+        text-align: center;
+        gap: 16px;
+        list-style: none;
+    }
+
+    #hamburger:checked~.column-center {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    /* Sections */
+    .section-hero,
+    .section-badge-heading-1,
+    .tutorials,
+    .section-badge-heading,
+    .contact,
+    .widget-wrapper {
+        padding: 40px 24px;
+    }
+
+    .badge-text {
+        width: auto;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .badge-text>* {
+        font-size: 28px !important;
+    }
+
+    .text-inwest {
+        padding: 0 24px 40px 24px;
+        text-align: center;
+    }
+
+    .inwest-par {
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .widget-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .widget-left {
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .widget-right {
+        width: 100%;
+        height: 300px;
+    }
+
+    .feature-box,
+    .slider-btn {
+        justify-content: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .leave-mess-box {
+        padding: 24px;
+    }
+
+    .actions {
+        text-align: center;
+    }
+
+    /* Buttons & Forms */
+    .btn-hero {
+        justify-content: center;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .primary-btn-default,
+    .secondary-btn-default {
+        padding: 16px 24px;
+        font-size: 14px;
+    }
+
+    input,
+    textarea {
+        height: 48px;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 140px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px 24px;
+    }
+}

@@ -1,0 +1,174 @@
+:root {
+    /* Font Families */
+    --font-healine: "Clash Display";
+    --font-body: "Instrument Sans";
+
+    /* Headline size */
+    --fs-h1-hero: 75px;
+    --lh-h1-hero: 1.2;
+
+    --fs-h2-hero: 56px;
+    --lh-h2-hero: 1.4;
+
+    --fs-h1: 42px;
+    --lh-h1: 1.4;
+
+    --fs-h2: 32px;
+    --lh-h2: 1.4;
+
+    --fs-h3: 24px;
+    --lh-h3: 1.4;
+
+    --fs-h4: 18px;
+    --lh-h4: 1.6;
+
+    --fs-h5: 16px;
+    --lh-h5: 1;
+
+    --fs-h6: 14px;
+    --lh-h6: 1.4;
+
+    /* Body size */
+    --fs-body-xl: 18px;
+    --lh-body-xl: 1.6;
+
+    --fs-body-l: 16px;
+    --lh-body-l: 1.6;
+
+    --fs-body-m: 14px;
+    --lh-body-m: 1.6;
+
+    --fs-body-s: 10px;
+    --lh-body-s: 1.5;
+
+    --fs-body-xs: 8px;
+    --lh-body-xs: 1.8;
+
+    --fs-body-med-l: 16px;
+    --lh-body-med-l: 1.5;
+
+    --fs-body-semi-m: 14px;
+    --lh-body-semi-m: 1.5;
+}
+
+/* Navbar */
+.nav-default {
+    font-family: var(--font-healine);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0%;
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+.nav-default:hover {
+    color: var(--color-text)
+}
+
+.nav-default:active {
+    color: var(--color-stroke-on-dark);
+}
+
+.nav-default-active {
+    font-size: 16px;
+    color: var(--color-primary);
+    font-family: var(--font-healine);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-decoration: none;
+}
+
+/* Headlines */
+
+.h1-hero,
+.h2-hero,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: var(--font-healine);
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0;
+}
+
+.h1-hero {
+    font-size: var(--fs-h1-hero);
+    line-height: var(--lh-h1-hero);
+}
+
+.h2-hero {
+    font-size: var(--fs-h2-hero);
+    line-height: var(--lh-h2-hero);
+}
+
+.h1 {
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+}
+
+.h2 {
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+}
+
+.h3 {
+    font-size: var(--fs-h3);
+    line-height: var(--lh-h3);
+}
+
+.h4 {
+    font-size: var(--fs-h4);
+    line-height: var(--lh-h4);
+}
+
+.h5 {
+    font-size: var(--fs-h5);
+    line-height: var(--lh-h5);
+}
+
+.h6 {
+    font-size: var(--fs-h6);
+    line-height: var(--lh-h6);
+}
+
+/* Body */
+
+.body-xl {
+    font: 400 var(--fs-body-xl)/var(--lh-body-xl) var(--font-body);
+    letter-spacing: 0;
+}
+
+.body-l {
+    font: 400 var(--fs-body-l) /var(--lh-body-l) var(--font-body);
+    letter-spacing: 0;
+}
+
+.body-m {
+    font: 400 var(--fs-body-m) /var(--lh-body-m) var(--font-body);
+    letter-spacing: 0;
+}
+
+.body-s {
+    font: 400 var(--fs-body-s) /var(--lh-body-s) var(--font-body);
+    letter-spacing: 0;
+}
+
+.body-xs {
+    font: 400 var(--fs-body-xs)/var(--lh-body-xs) var(--font-body);
+    letter-spacing: -0.02em;
+}
+
+.body-med-l {
+    font: 500 var(--fs-body-med-l)/var(--lh-body-med-l) var(--font-body);
+    letter-spacing: 0;
+}
+
+.body-semi-m {
+    font: 600 var(--fs-body-semi-m)/var(--lh-body-semi-m) var(--font-body);
+    letter-spacing: 0;
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crafton - Zadanie Testowe</title>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+		rel="stylesheet">
+	<link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/colors.css">
+	<link rel="stylesheet" href="./css/typography.css">
+	<link rel="stylesheet" href="./css/components.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/mobile.css">
+	<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+
+<body>
+	<header class="nav-items">
+		<div class="nav-grid">
+			<!-- column-left -->
+			<div class="column-left">
+				<a href="/" class="brand" aria-label="Strona główna">
+					<img src="./media/logo.svg" alt="crafton">
+				</a>
+			</div>
+			<input class="hamburger-label" type="checkbox" id="hamburger">
+			<label for="hamburger" class="hamburger-label"> <!-- Dodano klasę .hamburger-label -->
+				<div></div>
+				<div></div>
+				<div></div>
+			</label>
+			<!-- column-center -->
+			<div class="column-center">
+				<ul id="main-menu" class="nav-list">
+					<li>
+						<a class="nav-default" href="#">HOME</a>
+					</li>
+					<li>
+						<a class="nav-default" href="#onas">
+							O NAS
+							<span class="arrow-down material-symbols-outlined">navigate_next</span>
+						</a>
+					</li>
+					<li>
+						<a class="nav-default" href="#invest">
+							NASZE INWESTYCJE
+							<span class="arrow-down material-symbols-outlined">navigate_next</span>
+						</a>
+					</li>
+					<li><a class="nav-default" href="#tutorial">PORADNIK</a></li>
+					<li><a class="nav-default" href="#wynajmij">WYNAJMIJ</a></li>
+				</ul>
+			</div>
+			<!-- column-right -->
+			<div class="column-right">
+				<button href="#contact" class="primary-btn-default btn-nav h5">KONTAKT
+					<span class="iconify" data-icon="mdi:arrow-up"></span>
+				</button>
+			</div>
+		</div>
+	</header>
+	<!-- SECTION HERO -->
+	<section class="section-hero">
+		<div>
+			<h1 class="text-main h1-hero">TWÓJ KLUCZ DO LEPSZEJ PRZYSZŁOŚCI</h1>
+			<p class="text-sec body-xl">W RealEstate nieruchomości to coś więcej niż tylko budynki - to miejsca,
+				w&nbsp;których powstają historie, rozwijają się biznesy i spełniają marzenia.</p>
+
+			<div class="hero-buttons">
+				<button class="primary-btn-default btn-hero h6">NASZE INWESTYCJE
+					<span class="iconify" data-icon="mdi:arrow-up"></span>
+				</button>
+				<button class="secondary-btn-default btn-hero h5">POZNAJMY SIĘ</button>
+			</div>
+		</div>
+	</section>
+	<!-- SECTION TEXT-INVEST -->
+	<section id="invest" class="text-inwest">
+		<h1 class="h1 text-main">NASZE INWESTYCJE</h1>
+		<p class="body-l inwest-par">Nasze inwestycje to miejsca, które łączą nowoczesny design, funkcjonalność i
+			trwałość. Każdy projekt realizowany przez RealEstate to wynik pasji, zaangażowania i dbałości o każdy
+			szczegół.</p>
+	</section>
+
+	<!-- SECTION WIDGET -->
+	<section class="widget-wrapper">
+		<div class="widget-container">
+			<div class="widget-left">
+				<div class="feature-box">
+					<button class="icon-button">
+						<span class="icon" aria-label="Lokalizacja"></span>
+					</button>
+					<p id="slide-location" class="h5 location">Poznań 20-300</p>
+				</div>
+				<div class="heading-m">
+					<h2 id="slide-title" class="h2">POZNAŃ PARK</h2>
+				</div>
+				<div class="widget-text">
+					<p id="slide-text" class="body-l">
+						Poznań Park to kameralne osiedle nowoczesnych domów, które harmonijnie łączy komfort życia
+						z bliskością natury. Położone zaledwie 10 minut od centrum Poznania, oferuje ciszę i zieleń
+						bez kompromisów – z łatwym dostępem do miejskich udogodnień.
+					</p>
+				</div>
+				<div class="section-inner">
+					<button href="szczegoly" class="primary-btn-default h5">POZNAJ SZCZEGÓŁY
+						<span class="iconify" data-icon="mdi:arrow-up"></span>
+					</button>
+				</div>
+				<div class="slider-btn">
+					<button id="prev-slide" class="arrow-button">
+						<span class="arrow-left material-symbols-outlined">navigate_next</span>
+					</button>
+					<button id="next-slide" class="arrow-button">
+						<span class="material-symbols-outlined">navigate_next</span>
+					</button>
+				</div>
+
+			</div>
+			<div class="widget-right">
+				<img id="slide-image" class="widget-image" src="./media/poznanpark.jpg">
+			</div>
+		</div>
+	</section>
+	<!-- Section Badge Heading -->
+	<section id="tutorial" class="section-badge-heading-1">
+		<div class="badge-text">
+			<h1 class="h1">PORADNIK PO NIERUCHOMOŚCIACH</h1>
+		</div>
+	</section>
+	<!-- Section Grid 3-col Tutorials -->
+	<section class="tutorials">
+		<div class="grid">
+			<article class="card">
+				<img src="./media/tut-1.jpg" alt="" class="card-img card-focusbottom">
+				<h3 class="h4">JAK KUPIĆ NIERUCHOMOŚĆ I&nbsp;NIE&nbsp;ZWARIOWAĆ? PRZEWODNIK DLA POCZĄTKUJĄCYCH.</h3>
+				<div class="btn-cont-tut">
+					<button href="#" class="secondary-btn-default h5">PRZEJDŹ DO ARTYKUŁU</button>
+				</div>
+			</article>
+			<article class="card">
+				<img src="./media/tut-2.jpg" alt="" class="card-img">
+				<h3 class="h4">CZYM RÓŻNI SIĘ INWESTYCJA W NIERUCHOMOŚĆ OD ZWYKŁEGO ZAKUPU?</h3>
+				<div class="btn-cont-tut">
+					<button href="#" class="secondary-btn-default h5">PRZEJDŹ DO ARTYKUŁU</button>
+				</div>
+			</article>
+			<article class="card">
+				<img src="./media/tut-3.jpg" alt="" class="card-img">
+				<h3 class="h4">5 TECHNOLOGII, KTÓRE POWINNY MIEĆ NOWOCZESNE DOMY W 2025 ROKU</h3>
+				<div class="btn-cont-tut">
+					<button href="#" class="secondary-btn-default h5">PRZEJDŹ DO ARTYKUŁU</button>
+				</div>
+			</article>
+		</div>
+	</section>
+	<!-- Section Badge Geading-->
+	<section class="section-badge-heading">
+		<button class="primary-btn-default h5">
+			WIĘCEJ PORADNIKÓW
+			<span class="iconify" data-icon="mdi:arrow-up"></span>
+		</button>
+	</section>
+	<!-- Section Contact -->
+	<section id="contact" class="contact">
+		<div>
+			<h1 class="h1 contact-header">
+				POROZMAWIAJMY
+			</h1>
+		</div>
+		<div class="leave-mess-box">
+			<h4 class="h4 input-leavemess">ZOSTAW NAM WIADOMOŚĆ</h4>
+			<form action="#" method="post" novalidate>
+				<div class="contact-form" role="group" aria-label="Dane kontaktowe">
+					<div class="inp-area">
+						<label class="h6 form-label" for="email">ADRES E‑MAIL</label>
+						<input class="body-l" id="email" name="email" type="email" placeholder="Twój adres E‑mail"
+							required />
+					</div>
+					<div class="inp-area">
+						<label class="h6 form-label" for="name">IMIĘ I NAZWISKO</label>
+						<input class="body-l" id="name" name="name" type="text" placeholder="Twoje imię i nazwisko" />
+					</div>
+					<div class="inp-area-l">
+						<label class="h6 form-label" for="topic">TEMAT ROZMOWY</label>
+						<input class="body-l" id="topic" name="topic" type="text"
+							placeholder="O czym chcesz porozmawiać?" />
+					</div>
+				</div>
+
+
+				<div class="messageinput">
+					<div>
+						<label class="h6 form-label" for="message">WIADOMOŚĆ</label>
+						<textarea class="body-l" id="message" name="message"
+							placeholder="Napisz swoją wiadomość…"></textarea>
+					</div>
+				</div>
+
+
+				<div class="consent">
+					<label class="body-xs">
+						<input class="rb" id="rodo" name="rodo" type="checkbox" required />
+						<span class="checkmark"></span>
+						Wyrażam zgodę na przetwarzanie moich danych osobowych w postaci imienia, nazwiska, adresu e-mail
+						i nr tel. (jeżeli został podany), podanych w powyższym formularzu, zgodnie z przepisami
+						rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.
+						w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie
+						swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o
+						ochronie danych), Dz. Urz. UE z 4.5.2016 r. L 119, str. 1), w celu udzielenia odpowiedzi
+						na złożone zapytanie. Żądanie usunięcia danych proszę kierować na adres biuro@realestate.com
+					</label>
+					<p class="info body-xs">
+						Informujemy, że: 1. Administratorem Pani/Pana danych osobowych jest RealEstate sp. z o.o. z
+						siedzibą
+						w Poznaniu przy ul. Długiej 5 lok. 25, 01-200 Poznań (KRS nr 0001000000) (dalej „Administrator”)
+						e-mail: biuro@realestate.com
+					</p>
+				</div>
+
+				<div class="actions">
+					<button class="primary-btn-default" type="submit">
+						WYŚLIJ WIADOMOŚĆ
+						<span class="iconify" data-icon="mdi:arrow-up"></span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- Section footer-->
+	<footer>
+		<div class="footer-wrapper">
+			<p class="body-m">
+				© 2025 RealEstate Sp. z o.o. Wszelkie prawa zastrzeżone.
+			</p>
+			<p class="body-m">
+				Projekt i realizacja: <strong>Crafton</strong>
+			</p>
+			<p class="body-s wrap">
+				Materiały zawarte na stronie WWW mają charakter poglądowy i nie mogą być traktowane jako ostateczne
+				projekty realizacyjne. Deweloper zastrzega sobie prawo zmian. Niniejsza informacja nie stanowi oferty w
+				rozumieniu przepisów Kodeksu Cywilnego i ma wyłącznie charakter informacyjny.
+			</p>
+		</div>
+	</footer>
+	<script src="./js/slider.js"></script>
+	<script src="./js/navbar.js"></script>
+	<script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>
